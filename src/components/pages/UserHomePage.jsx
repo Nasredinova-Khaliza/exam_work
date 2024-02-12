@@ -2,8 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import scss from "./UserHome.module.scss";
 
-const url =
-	"https://api.elchocrud.pro/api/v1/9a50ea85d6d9303d3551a2638025cd92/userPage";
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const UserHome = () => {
 	const [userProfile, setUserProfile] = useState([]);

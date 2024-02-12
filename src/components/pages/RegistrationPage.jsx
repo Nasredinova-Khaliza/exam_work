@@ -1,10 +1,9 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import scss from "./RegistrationPage.module.scss";
 
-const url =
-	"https://api.elchocrud.pro/api/v1/9a50ea85d6d9303d3551a2638025cd92/userPage";
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const RegistrationPage = () => {
 	const navigate = useNavigate();
